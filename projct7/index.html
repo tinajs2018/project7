@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRial 1</title>
+    <style>
+        .btn{
+            color: #4444;
+            color: black;
+            padding:  12px;
+            border: none;
+            /* width:  100%; */
+            text-align: left;
+        }
+        .btn:hover{
+            background-color: #eeffee;
+        }
+        .content{
+            background-color: burlywood;
+            padding: 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home page</h1>
+    <p>View the available tourist site in summer</p>
+<button class="btn">London</button>
+<div class="content">One of the most lenegely site which as been over the later 
+    for almost a milliam .
+</div>
+
+<button class="btn">Paris</button>
+<div class="content">One of the most lenegely site which as been over the later 
+    for almost a milliam .
+</div>
+
+<button class="btn">Tokyo</button>
+<div class="content">One of the most lenegely site which as been over the later 
+    for almost a milliam .
+</div>
+<script>
+    // var event=document.getElementsByClassName("content");
+    var button =document.getElementsByClassName("btn");
+    var i;
+    for ( i = 0; i < button.length ; i++){
+        
+        button[i].addEventListener('click',function(){
+       var event= this.nextElementSibling;
+       if( event .style .display==="block"){
+           event .style .display ="none"
+       }else{
+            event .style .display= "block"
+       }
+
+
+        })
+    }
+</script>
+</body>
+</html>
